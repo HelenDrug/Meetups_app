@@ -53,7 +53,7 @@
 .actions {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .actions a {
@@ -98,6 +98,6 @@
 
   .actions {
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }

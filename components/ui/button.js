@@ -3,8 +3,8 @@ import styles from "./button.module.css";
 
 const Button = ({ children, link }) => {
   return (
-    <Link href={link} className={styles.btn}>
-      {children}
+    <Link href={link}>
+      <a className={styles.btn}>{children}</a>
     </Link>
   );
 };
