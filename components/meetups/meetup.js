@@ -1,4 +1,5 @@
 import Link from "next/link";
+import styles from "./meetup.module.css";
 
 const Meetup = ({ meetup }) => {
   const date = new Date(meetup.date).toLocaleDateString("en-US", {
@@ -11,23 +12,23 @@ const Meetup = ({ meetup }) => {
   const link = `/events/${meetup.id}`;
 
   return (
-    <li>
+    <li className={styles.item}>
       <img
         src={`/${meetup.image}`}
         alt={meetup.name}
         style={{ width: "500px" }}
       />
-      <div>
-        <div>
+      <div className={styles.content}>
+        <div className={styles.summary}>
           <h2>{meetup.name}</h2>
-          <div>
+          <div className={styles.date}>
             <time>{date}</time>
           </div>
-          <div>
+          <div className={styles.address}>
             <address>{address}</address>
           </div>
         </div>
-        <div>
+        <div className={styles.actions}>
           <Link href={link}>Explore Meetup</Link>
         </div>
       </div>
