@@ -10,9 +10,8 @@
 }
 
 .item img {
-  width: 100%;
-  object-fit: cover;
   height: 10rem;
+  width: 100%;
 }
 
 .content {
@@ -82,12 +81,12 @@
   }
 
   .item img {
-    width: 40%;
+    width: 50%;
     height: 14rem;
   }
 
   .content {
-    width: 60%;
+    width: 50%;
     padding: 0;
     text-align: left;
   }

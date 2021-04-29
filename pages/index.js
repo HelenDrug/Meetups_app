@@ -5,7 +5,6 @@ const HomePage = () => {
   const featuredMeetups = getFeaturedMeetups();
   return (
     <div>
-      <h1>Home Page</h1>
       <MeetupsList meetups={featuredMeetups} />
     </div>
   );

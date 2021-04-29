@@ -16,11 +16,7 @@ const Meetup = ({ meetup }) => {
 
   return (
     <li className={styles.item}>
-      <img
-        src={`/${meetup.image}`}
-        alt={meetup.name}
-        style={{ width: "500px" }}
-      />
+      <img src={`/${meetup.image}`} alt={meetup.name} />
       <div className={styles.content}>
         <div className={styles.summary}>
           <h2>{meetup.name}</h2>
