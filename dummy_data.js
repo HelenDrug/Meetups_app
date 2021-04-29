@@ -52,6 +52,6 @@ export function getFilteredMeetups(dateFilter) {
   return filteredMeetups;
 }
 
-export function getmeetupById(id) {
+export function getMeetupById(id) {
   return DUMMY_MEETUPS.find((meetup) => meetup.id === id);
 }
