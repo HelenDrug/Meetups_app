@@ -19,7 +19,7 @@ const Meetup = ({ meetup }) => {
       <img src={`/${meetup.image}`} alt={meetup.name} />
       <div className={styles.content}>
         <div className={styles.summary}>
-          <h2>{meetup.name}</h2>
+          <h2>{meetup.title}</h2>
           <div className={styles.date}>
             <DateIcon />
             <time>{date}</time>
