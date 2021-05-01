@@ -1,17 +1,18 @@
 import Button from "../ui/button";
+import styles from "./meetupsSearch.module.css";
 
 const MeetupsSearch = () => {
   return (
-    <form>
-      <div>
-        <div>
+    <form className={styles.form}>
+      <div className={styles.controls}>
+        <div className={styles.control}>
           <label htmlFor="year">Year</label>
           <select id="year">
             <option value="2021">2021</option>
             <option value="2022">2022</option>
           </select>
         </div>
-        <div>
+        <div className={styles.control}>
           <label htmlFor="month">Month</label>
           <select id="month">
             <option value="1">January</option>
